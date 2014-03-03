@@ -1,0 +1,58 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory>
+        <CheckBoxPreference
+                android:key="quiet"
+                android:defaultValue="@bool/quiet"
+                android:title="@string/quiet_title"
+                android:summary="@string/quiet_summary"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory>
+        <CheckBoxPreference
+                android:key="scheduled"
+                android:defaultValue="@bool/scheduled"
+                android:title="@string/scheduled_title"
+                />
+
+        <com.sepidarapps.goodnight.TimePreference
+                android:key="scheduleFrom"
+                android:dependency="scheduled"
+                android:shouldDisableView="true"
+                android:defaultValue="@string/schedule_from"
+                android:title="@string/schedule_from_title"
+                android:dialogTitle="@string/schedule_from_title"
+                android:negativeButtonText="@string/cancel"
+                android:positiveButtonText="@string/set"/>
+
+        <com.sepidarapps.goodnight.TimePreference
+                android:key="scheduleTo"
+                android:dependency="scheduled"
+                android:shouldDisableView="true"
+                android:defaultValue="@string/schedule_to"
+                android:title="@string/schedule_to_title"
+                android:dialogTitle="@string/schedule_to_title"
+                android:negativeButtonText="@string/cancel"
+                android:positiveButtonText="@string/set"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory>
+        <ListPreference
+                android:key="allow"
+                android:defaultValue="@string/allow_calls_from"
+                android:title="@string/allow_calls_from_title"
+                android:summary="@string/allow_calls_from_favorites"
+                android:entries="@array/allow_calls_from_labels"
+                android:entryValues="@array/allow_calls_from_values"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory>
+        <CheckBoxPreference
+                android:key="repeated"
+                android:defaultValue="@bool/repeated"
+                android:title="@string/repeated_calls_title"
+                android:summary="@string/repeated_calls_summary"/>
+    </PreferenceCategory>
+
+</PreferenceScreen>

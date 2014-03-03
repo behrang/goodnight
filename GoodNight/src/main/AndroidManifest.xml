@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.sepidarapps.goodnight"
+          android:versionCode="1"
+          android:versionName="1.0">
+
+    <uses-sdk
+            android:minSdkVersion="7"
+            android:targetSdkVersion="19"/>
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+
+    <application
+            android:allowBackup="true"
+            android:icon="@drawable/ic_launcher"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme"
+            android:supportsRtl="true">
+
+        <activity
+                android:name="com.sepidarapps.goodnight.MainActivity"
+                android:label="@string/app_name"
+                android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <receiver
+                android:name="com.sepidarapps.goodnight.PhoneReceiver"
+                android:enabled="false">
+            <intent-filter>
+                <action android:name="android.intent.action.PHONE_STATE"/>
+            </intent-filter>
+        </receiver>
+
+        <receiver
+                android:name="com.sepidarapps.goodnight.RingerModeChangedReceiver"
+                android:enabled="false">
+            <intent-filter>
+                <action android:name="android.media.RINGER_MODE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name="com.sepidarapps.goodnight.BootCompletedReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name="com.sepidarapps.goodnight.QuietModeReceiver"/>
+
+        <receiver android:name="com.sepidarapps.goodnight.ScheduleReceiver"/>
+
+        <receiver android:name="com.sepidarapps.goodnight.SwitchQuietModeReceiver"/>
+
+    </application>
+
+</manifest>
