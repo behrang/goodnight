@@ -1,26 +1,26 @@
 <resources>
-    <string name="app_name">Good Night</string>
+    <string name="app_name">شب خوش</string>
 
     <bool name="quiet">false</bool>
-    <string name="quiet_title">Quiet</string>
-    <string name="quiet_summary">When enabled, calls and alerts that arrive will be silenced, and a moon icon will appear in the status bar.</string>
+    <string name="quiet_title">بی صدا</string>
+    <string name="quiet_summary">هنگامی که فعال باشد، زنگ های دریافتی و هشدار ها بی صدا خواهند شد، و یک نشانک ماه در نوار وضعیت دیده خواهد شد.</string>
 
     <bool name="scheduled">false</bool>
-    <string name="scheduled_title">Scheduled</string>
+    <string name="scheduled_title">زمان بندی</string>
     <string name="schedule_from">22:00</string>
-    <string name="schedule_from_title">From</string>
+    <string name="schedule_from_title">از</string>
     <string name="schedule_to">07:00</string>
-    <string name="schedule_to_title">To</string>
-    <string name="cancel">Cancel</string>
-    <string name="set">Set</string>
+    <string name="schedule_to_title">تا</string>
+    <string name="cancel">برگشت</string>
+    <string name="set">ذخیره</string>
 
     <string name="allow_calls_from">-2</string>
-    <string name="allow_calls_from_title">Allow Calls From</string>
+    <string name="allow_calls_from_title">زنگ دریافتی با صدا از</string>
     <string-array name="allow_calls_from_labels">
-        <item>No One</item>
-        <item>Favorites</item>
-        <item>All Contacts</item>
-        <item>Everyone</item>
+        <item>هیچ کس</item>
+        <item>ستاره دار ها</item>
+        <item>آشنایان</item>
+        <item>همه کس</item>
     </string-array>
     <string-array name="allow_calls_from_values">
         <item>-1</item>
@@ -28,16 +28,16 @@
         <item>-3</item>
         <item>-4</item>
     </string-array>
-    <string name="allow_calls_from_no_one">No One\nIncoming calls from everyone will be silenced.</string>
-    <string name="allow_calls_from_favorites">Favorites\nIncoming calls from your favorites will not be silenced.</string>
-    <string name="allow_calls_from_all_contacts">All Contacts\nIncoming calls from your contacts will not be silenced.</string>
-    <string name="allow_calls_from_everyone">Everyone\nNo incoming calls will be silenced.</string>
+    <string name="allow_calls_from_no_one">هیچ کس\nهمه ی زنگ های دریافتی بی صدا خواهند شد.</string>
+    <string name="allow_calls_from_favorites">ستاره دار ها\nزنگ های دریافتی از آشنایانی که ستاره دار هستند بی صدا نخواهند شد.</string>
+    <string name="allow_calls_from_all_contacts">آشنایان\nزنگ های دریافتی از کسانی که در فهرست تماس های شما هستند بی صدا نخواهند شد.</string>
+    <string name="allow_calls_from_everyone">همه کس\nهیچ زنگ دریافتی ای بی صدا نخواهد شد.</string>
 
     <bool name="repeated">false</bool>
-    <string name="repeated_calls_title">Repeated Calls</string>
-    <string name="repeated_calls_summary">When enabled, a second call from the same person within three minutes will not be silenced.</string>
+    <string name="repeated_calls_title">زنگ های پی در پی</string>
+    <string name="repeated_calls_summary">هنگامی که فعال باشد، زنگ دریافتی دوم از همان کس در مدت سه دقیقه، بی صدا نخواهد شد.</string>
 
-    <string name="notification_title">Good Night</string>
-    <string name="notification_text">Ringer is now silent</string>
-    <string name="toast_message">Good Night!</string>
+    <string name="notification_title">شب خوش</string>
+    <string name="notification_text">زنگ‌ها و هشدارها بی صدا شدند</string>
+    <string name="toast_message">شب خوش!</string>
 </resources>
